@@ -4,6 +4,6 @@ metadata:
   name: ui-config
 data:
   RETAIL_UI_ENDPOINTS_CATALOG: http://catalog:8080
-  RETAIL_UI_ENDPOINTS_CART: http://cart:8080
+  RETAIL_UI_ENDPOINTS_CARTS: http://cart:8080
   RETAIL_UI_ENDPOINTS_CHECKOUT: http://checkout:8080
   RETAIL_UI_ENDPOINTS_ORDERS: http://orders:8080
