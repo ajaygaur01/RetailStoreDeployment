@@ -7,18 +7,18 @@ spec:
   selector:
     matchLabels:
       app: catalog
+      version: v1
   template:
     metadata:
       labels:
         app: catalog
+        version: v1
     spec:
       containers:
-        - name: catalog
-          image: retail-catalog:1.0
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: 8080
-          env:
-            - name: RETAIL_CATALOG_PERSISTENCE_PROVIDER
-              value: in-memory
-
+      - name: catalog
+        image: retail-catalog:1.0
+        ports:
+        - containerPort: 8080
+        env:
+        - name: RETAIL_CATALOG_PERSISTENCE_PROVIDER
+          value: in-memory
